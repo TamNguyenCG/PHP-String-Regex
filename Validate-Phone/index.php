@@ -33,7 +33,7 @@
 if ($_POST) {
     $input = $_POST["phone"];
 
-    $pattern = "/^[0-9]{2}-[0][0-9]{9}$/";
+    $pattern = "/^\d{2}-[0]\d{9}$/";
 
     if(preg_match($pattern,$input)){
         echo "<h2>Validate Phone Number</h2><br>";
